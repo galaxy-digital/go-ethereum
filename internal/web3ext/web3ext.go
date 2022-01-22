@@ -22,9 +22,9 @@ var Modules = map[string]string{
 	"admin":      AdminJs,
 	"chequebook": ChequebookJs,
 	"clique":     CliqueJs,
-	"icicbash":   IcicbashJs,
+	"dbasash":    DbasashJs,
 	"debug":      DebugJs,
-	"icicb":      IcicbJs,
+	"dbas":       DbasJs,
 	"miner":      MinerJs,
 	"net":        NetJs,
 	"personal":   PersonalJs,
@@ -118,9 +118,9 @@ web3._extend({
 });
 `
 
-const IcicbashJs = `
+const DbasashJs = `
 web3._extend({
-	property: 'icicbash',
+	property: 'dbasash',
 	methods: [
 		new web3._extend.Method({
 			name: 'getWork',
@@ -487,9 +487,9 @@ web3._extend({
 });
 `
 
-const IcicbJs = `
+const DbasJs = `
 web3._extend({
-	property: 'icicb',
+	property: 'dbas',
 	methods: [
 		new web3._extend.Method({
 			name: 'chainId',
